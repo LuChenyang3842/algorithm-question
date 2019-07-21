@@ -1,6 +1,11 @@
 # 一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法。
 
 #递归
+# 递归是最直接的解法 
+# F(1) = 1
+# F(2) = 2
+# F(n) = F(n-1) + F(n-2)
+# But the time complexity is too high O(n) = 2^n
 class Solution:
     def jumpFloor(self, number):
         if number<=2:
